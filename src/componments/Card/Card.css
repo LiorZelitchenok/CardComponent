@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "KumbhSans-Regular";
+  src: local("KumbhSans-Regular"),
+    url("../../assets/KumbhSans-Regular.ttf") format("truetype");
+  font-family: "KumbhSans-Bold";
+  src: local("KumbhSans-Bold"),
+    url("../../assets/KumbhSans-Bold.ttf") format("truetype");
+  font-family: "KumbhSans-Light";
+  src: local("KumbhSans-Light"),
+    url("../../assets/KumbhSans-Light.ttf") format("truetype");
+}
+
+.card-Container {
+  display: flex;
+  height: 27em;
+  width: 21em;
+  background-color: white;
+  border-radius: 1em;
+  flex-direction: column;
+}
+
+.card-Header {
+  height: 9em;
+  width: 21em;
+  border-radius: 1em 1em 0 0;
+}
+
+.card-Content {
+  height: 9em;
+  width: 21em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.card-Fullname {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2em;
+}
+.card-Fullname > span {
+  padding-left: 0.5em;
+  font-weight: bold;
+  font-family: "KumbhSans-Bold";
+}
+.card-Fullname > span:nth-child(2) {
+  color: hsl(227, 10%, 46%, 70%);
+  font-weight: normal;
+}
+.card-Content > p {
+  font-size: small;
+  color: hsl(227, 10%, 46%, 70%);
+  font-weight: normal;
+  font-family: "KumbhSans-Regular";
+  letter-spacing: 0.1em;
+}
+.card-Information {
+  height: 9em;
+  width: 21em;
+  border-radius: 0 0 1em 1em;
+  display: flex;
+  flex-direction: row;
+  border-top: solid;
+  border-width: 1px;
+  border-color: hsl(227, 10%, 46%, 20%);
+}
+
+.card-Information > p > span:nth-child(2) {
+  font-size: small;
+  color: hsl(227, 10%, 46%, 70%);
+  font-weight: normal;
+  font-family: "KumbhSans-Light";
+  letter-spacing: 0.1em;
+}
+
+p {
+  display: block;
+  height: 9em;
+  width: 7em;
+  text-align: center;
+}
+
+span {
+  display: block;
+  margin-top: 1em;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-Image {
+  border-radius: 50em;
+  align-self: center;
+  position: absolute;
+  top: -3.1em;
+}
